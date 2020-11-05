@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Author: Albert Ulysses <albertulysseschavez@gmail.com>
+Author : Albert Ulysses <albertulysseschavez@gmail.com>
 Purpose: Holds cleaning functions
 """
 import re
