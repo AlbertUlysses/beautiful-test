@@ -6,10 +6,8 @@ Purpose: Holds cleaning functions
 import re
 
 
-class Clean():
-
-    def value(self, amount):
-        """Returns a float for items that are values"""
-        amount = re.sub('[^0-9.]', '', amount)
-        amount = float(amount)
-        return amount
+def value(value_field):
+    """Returns a float for items that are values"""
+    amount = re.sub('[^0-9.]', '', value_field)
+    amount = float(amount)
+    return amount
