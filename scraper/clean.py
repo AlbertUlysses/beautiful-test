@@ -6,8 +6,13 @@ Purpose: Holds cleaning functions
 import re
 
 
-def value(value_field):
+def monetary(value_field):
     """Returns a float for items that are values"""
     amount = re.sub('[^0-9.]', '', value_field)
-    amount = float(amount)
-    return amount
+    return float(amount)
+
+
+def wholenumber(value_field):
+    """Returns an intger datetype from a string"""
+    value = re.sub('[^0-9]', '', value_field)
+    return int(value)

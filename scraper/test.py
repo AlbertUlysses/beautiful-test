@@ -2,7 +2,7 @@
 """Test for scrapescript.py"""
 
 import os
-from clean import value
+from clean import monetary, wholenumber
 from subprocess import getstatusoutput, getoutput
 
 prg = './clean.py'
@@ -10,7 +10,7 @@ prg = './clean.py'
 
 # -------------------------------------------------
 def test_exists():
-    """exists"""
+    """checks if the file exist"""
 
     assert os.path.isfile(prg)
 
@@ -19,5 +19,13 @@ def test_exists():
 def test_price():
     """£51.77 -> 51.77 type float"""
 
-    res = value('<td>£51.77</td>')
-    assert res == float('51.77')
+    res = monetary('£51.77')
+    assert res == float(51.77)
+
+
+# -------------------------------------------------
+def test_integer():
+    """'in stock (22 available)' -> 22"""
+
+    res = wholenumber('in stock (22 available)')
+    assert res == int(22)
