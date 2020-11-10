@@ -1,3 +1,4 @@
+attrs @ file:///tmp/build/80754af9/attrs_1600298409949/work
 beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1601924105527/work
 brotlipy==0.7.0
 certifi==2020.6.20
@@ -5,12 +6,20 @@ cffi @ file:///tmp/build/80754af9/cffi_1600699146221/work
 chardet==3.0.4
 cryptography @ file:///tmp/build/80754af9/cryptography_1601046815590/work
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+iniconfig @ file:///tmp/build/80754af9/iniconfig_1602780191262/work
 m3u8downloader==0.8.0
+more-itertools @ file:///tmp/build/80754af9/more-itertools_1598884071673/work
+packaging==20.4
+pluggy==0.13.1
+py @ file:///tmp/build/80754af9/py_1593446248552/work
 pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
 PySocks==1.7.1
+pytest==0.0.0
 requests==2.21.0
 six==1.15.0
 soupsieve==2.0.1
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
 urllib3==1.24.3
 wells==1.4.1
