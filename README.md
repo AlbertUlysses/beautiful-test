@@ -1,2 +1,2 @@
 # beautiful-test
-Python Script written for an article on TDD and Web Scraping
+Python Script written for my article on TDD and Web Scraping
