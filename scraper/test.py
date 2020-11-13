@@ -3,7 +3,6 @@
 
 import os
 from clean import monetary, wholenumber
-from subprocess import getstatusoutput, getoutput
 
 prg = './clean.py'
 
