@@ -5,8 +5,8 @@ Purpose: Scrape data from books.toscrape.com
 """
 import requests
 from bs4 import BeautifulSoup
-from clean import wholenumber, monetary
-from models import Product
+import clean as cl
+import models
 
 
 def main():
@@ -20,8 +20,10 @@ def main():
     tax = soup.select('tr:nth-child(5) > td:nth-child(2)')[0].get_text()
     availability = soup.select('tr:nth-child(6) > td:nth-child(2)')[0].get_text()
 
-    print(Product(upc=upc, product_type=product_type, price=monetary(price),
-                  tax=monetary(tax), availability=wholenumber(availability))._asdict())
+    print(models.Product(upc=upc, product_type=product_type,
+                         price=cl.monetary(price),
+                         tax=cl.monetary(tax),
+                         availability=cl.wholenumber(availability))._asdict())
 
 
 if __name__ == '__main__':
