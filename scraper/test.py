@@ -3,7 +3,6 @@
 
 import os
 import clean as cl
-#from clean import monetary, wholenumber
 
 prg = './clean.py'
 
